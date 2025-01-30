@@ -1,0 +1,26 @@
+﻿@model Why.Data.Models.Biography
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    body{
+        overflow:hidden;
+    }
+</style>
+
+<div class="biografi" style="overflow-y:scroll">
+    <div class="profil">
+
+        <a class="login infobutton" asp-controller="Admin" asp-action="Info" asp-route-id="@ViewBag.thumbId">@ViewBag.userName</a>
+
+    </div>
+    <div class="container">
+
+        <main role="main" class="pb-3">
+            <p>
+                @Model.BiographyContent
+            </p>
+        </main>
+    </div>
+</div>

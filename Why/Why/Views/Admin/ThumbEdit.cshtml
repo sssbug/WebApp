@@ -1,0 +1,226 @@
+﻿@using Why.Data.Models
+@model Thumb
+@{
+    ViewData["Title"] = "ThumbEdit";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+
+
+
+<h2>ThumbEdit</h2>
+
+<form method="post">
+    @*<input  type="hidden" name="ThumbClass" value="@ViewBag.thumbClassName" required="">*@
+    <input type="hidden" name="ThumbId" value="@Model.ThumbId" required="">
+
+    <div class="user-box">
+
+        <input class="Inp" type="text" name="ThumbName" value="@Model.ThumbName">
+        <label>Name</label>
+
+    </div>
+    <div class="user-box">
+
+        <input class="Inp" type="text" name="ThumbLastName" value="@Model.ThumbLastName">
+        <label>LastName</label>
+
+    </div>
+    <div class="">
+        <h4>Reason</h4>
+
+        @switch (Model.ThumbTag)
+        {
+            case "Suicide":
+                <ul>
+                    <li>
+                        <label>Suicide</label>
+                        <input type="radio" name="ThumbTag" checked value="Suicide" required="">
+                    </li>
+                    <li>
+                        <label>Natural Deaths</label>
+                        <input type="radio" name="ThumbTag" value="Natural" required="">
+                    </li>
+                    <li>
+                        <label>Accidental Deaths</label>
+                        <input type="radio" name="ThumbTag" value="Accidental" required="">
+                    </li>
+                    <li>
+                        <label>Homicide</label>
+                        <input type="radio" name="ThumbTag" value="Homicide" required="">
+                    </li>
+                    <li>
+                        <label>Undetermined</label>
+                        <input type="radio" name="ThumbTag" value="Undetermined" required="">
+                    </li>
+                    <li>
+                        <label>Pending</label>
+                        <input type="radio" name="ThumbTag" value="Pending" required="">
+                    </li>
+                </ul>
+
+                break;
+                 case "Natural":
+                <ul>
+                    <li>
+                        <label>Suicide</label>
+                        <input type="radio" name="ThumbTag" value="Suicide" required="">
+                    </li>
+                    <li>
+                        <label>Natural Deaths</label>
+                        <input type="radio" name="ThumbTag" checked value="Natural" required="">
+                    </li>
+                    <li>
+                        <label>Accidental Deaths</label>
+                        <input type="radio" name="ThumbTag" value="Accidental" required="">
+                    </li>
+                    <li>
+                        <label>Homicide</label>
+                        <input type="radio" name="ThumbTag" value="Homicide" required="">
+                    </li>
+                    <li>
+                        <label>Undetermined</label>
+                        <input type="radio" name="ThumbTag" value="Undetermined" required="">
+                    </li>
+                    <li>
+                        <label>Pending</label>
+                        <input type="radio" name="ThumbTag" value="Pending" required="">
+                    </li>
+                </ul>
+
+                break;
+                 case "Accidental":
+                <ul>
+                    <li>
+                        <label>Suicide</label>
+                        <input type="radio" name="ThumbTag" value="Suicide" required="">
+                    </li>
+                    <li>
+                        <label>Natural Deaths</label>
+                        <input type="radio" name="ThumbTag" value="Natural" required="">
+                    </li>
+                    <li>
+                        <label>Accidental Deaths</label>
+                        <input type="radio" name="ThumbTag" checked value="Accidental" required="">
+                    </li>
+                    <li>
+                        <label>Homicide</label>
+                        <input type="radio" name="ThumbTag" value="Homicide" required="">
+                    </li>
+                    <li>
+                        <label>Undetermined</label>
+                        <input type="radio" name="ThumbTag" value="Undetermined" required="">
+                    </li>
+                    <li>
+                        <label>Pending</label>
+                        <input type="radio" name="ThumbTag" value="Pending" required="">
+                    </li>
+                </ul>
+
+                break;
+                 case "Homicide":
+                <ul>
+                    <li>
+                        <label>Suicide</label>
+                        <input type="radio" name="ThumbTag" value="Suicide" required="">
+                    </li>
+                    <li>
+                        <label>Natural Deaths</label>
+                        <input type="radio" name="ThumbTag" value="Natural" required="">
+                    </li>
+                    <li>
+                        <label>Accidental Deaths</label>
+                        <input type="radio" name="ThumbTag" value="Accidental" required="">
+                    </li>
+                    <li>
+                        <label>Homicide</label>
+                        <input type="radio" name="ThumbTag" checked value="Homicide" required="">
+                    </li>
+                    <li>
+                        <label>Undetermined</label>
+                        <input type="radio" name="ThumbTag" value="Undetermined" required="">
+                    </li>
+                    <li>
+                        <label>Pending</label>
+                        <input type="radio" name="ThumbTag" value="Pending" required="">
+                    </li>
+                </ul>
+
+                break;
+                 case "Undetermined":
+                <ul>
+                    <li>
+                        <label>Suicide</label>
+                        <input type="radio" name="ThumbTag" value="Suicide" required="">
+                    </li>
+                    <li>
+                        <label>Natural Deaths</label>
+                        <input type="radio" name="ThumbTag" value="Natural" required="">
+                    </li>
+                    <li>
+                        <label>Accidental Deaths</label>
+                        <input type="radio" name="ThumbTag" value="Accidental" required="">
+                    </li>
+                    <li>
+                        <label>Homicide</label>
+                        <input type="radio" name="ThumbTag" value="Homicide" required="">
+                    </li>
+                    <li>
+                        <label>Undetermined</label>
+                        <input type="radio" name="ThumbTag" checked value="Undetermined" required="">
+                    </li>
+                    <li>
+                        <label>Pending</label>
+                        <input type="radio" name="ThumbTag" value="Pending" required="">
+                    </li>
+                </ul>
+
+                break;
+                case "Pending":
+                <ul>
+                    <li>
+                        <label>Suicide</label>
+                        <input type="radio" name="ThumbTag" value="Suicide" required="">
+                    </li>
+                    <li>
+                        <label>Natural Deaths</label>
+                        <input type="radio" name="ThumbTag" value="Natural" required="">
+                    </li>
+                    <li>
+                        <label>Accidental Deaths</label>
+                        <input type="radio" name="ThumbTag" value="Accidental" required="">
+                    </li>
+                    <li>
+                        <label>Homicide</label>
+                        <input type="radio" name="ThumbTag" value="Homicide" required="">
+                    </li>
+                    <li>
+                        <label>Undetermined</label>
+                        <input type="radio" name="ThumbTag" value="Undetermined" required="">
+                    </li>
+                    <li>
+                        <label>Pending</label>
+                        <input type="radio" name="ThumbTag" checked value="Pending" required="">
+                    </li>
+                </ul>
+
+                break;
+            default:
+                break;
+        }
+
+
+
+
+
+    </div>
+    <div class="user-box">
+        <h4>Day of death</h4>
+        <input type="date" name="Date">
+
+
+    </div>
+    <div class="user-box">
+        <input class="btn btn-primary" type="submit" value="Next" name="submit">
+    </div>
+</form>

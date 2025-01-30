@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Info";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+
+<h6>@ViewBag.userName</h6>
+<h6>@ViewBag.userLast</h6>
+<h6>@ViewBag.userMail</h6>
+
+@if (ViewBag.userCount != null)
+{
+    //<a class="btn btn-dark" id="btn" asp-controller="Chat" asp-action="Index" asp-route-userEmail="@ViewBag.userMail">Chat</a>
+    <input type="hidden" id="txtOtherUser" value="@ViewBag.userMail" />
+    <input type="hidden" id="txtUser" value="@ViewBag.userCount" />
+    <input type="hidden" id="txtMainUser" value="@ViewBag.userMainName" />
+    <input type="hidden" id="txtOtherUserName" value="@ViewBag.userName" />
+}
+

@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Biography";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+
+<div style="border:1px #e8e8e8 solid;margin:0px 0px 10px 0px; box-shadow: 3px 4px 2px rgba(0,0,0,.6);">
+    
+    <form method="post">
+        
+        <div style="border-bottom:1px #e8e8e8 solid;
+					background-color:#f3f3f3;padding:8px;
+					font-size:13px;font-weight:700;color:#45484d;">
+            Biograpfy 
+        </div>
+        <div style="padding:8px;font-size:13px;" >
+            <textarea style="width:100%;" name="BiographyContent">
+
+            </textarea>
+        </div>
+        <div class="save-box">
+            <input class="save" type="submit" value="Save" name="submit">
+        </div>
+
+    </form>
+
+</div>
+

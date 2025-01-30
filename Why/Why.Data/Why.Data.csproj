@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220827203514_WhyDb.cs" />
+    <Compile Remove="Migrations\20220827203514_WhyDb.Designer.cs" />
+    <Compile Remove="Migrations\20220828153011_WhyDb2.cs" />
+    <Compile Remove="Migrations\20220828153011_WhyDb2.Designer.cs" />
+    <Compile Remove="Migrations\20220828155419_WhyDb2.cs" />
+    <Compile Remove="Migrations\20220828155419_WhyDb2.Designer.cs" />
+    <Compile Remove="Migrations\20220828160944_WhyDb2.cs" />
+    <Compile Remove="Migrations\20220828160944_WhyDb2.Designer.cs" />
+    <Compile Remove="Migrations\20220828161157_WhyDb2.cs" />
+    <Compile Remove="Migrations\20220828161157_WhyDb2.Designer.cs" />
+    <Compile Remove="Migrations\20220828161533_WhyDb2.cs" />
+    <Compile Remove="Migrations\20220828161533_WhyDb2.Designer.cs" />
+    <Compile Remove="Migrations\20220828161635_WhyDb2.cs" />
+    <Compile Remove="Migrations\20220828161635_WhyDb2.Designer.cs" />
+    <Compile Remove="Migrations\20220829091623_WhyDbTwo.cs" />
+    <Compile Remove="Migrations\20220829091623_WhyDbTwo.Designer.cs" />
+    <Compile Remove="Migrations\20220829101036_WhyDb.cs" />
+    <Compile Remove="Migrations\20220829101036_WhyDb.Designer.cs" />
+    <Compile Remove="Migrations\20220829114916_WhyDb2.cs" />
+    <Compile Remove="Migrations\20220829114916_WhyDb2.Designer.cs" />
+    <Compile Remove="Migrations\20220829115432_WhyDb.cs" />
+    <Compile Remove="Migrations\20220829115432_WhyDb.Designer.cs" />
+    <Compile Remove="Migrations\20220829115523_WhyDb.cs" />
+    <Compile Remove="Migrations\20220829115523_WhyDb.Designer.cs" />
+    <Compile Remove="Migrations\20220829115718_WhyDb.cs" />
+    <Compile Remove="Migrations\20220829115718_WhyDb.Designer.cs" />
+    <Compile Remove="Migrations\20220829115845_WhyDb.cs" />
+    <Compile Remove="Migrations\20220829115845_WhyDb.Designer.cs" />
+    <Compile Remove="Migrations\20220829125902_WhyDb.cs" />
+    <Compile Remove="Migrations\20220829125902_WhyDb.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

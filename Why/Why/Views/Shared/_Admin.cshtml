@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Why</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/chat.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/Admin.css" asp-append-version="true" />
+</head>
+<body>
+	<header class="navable">
+		<nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-3">
+			<div class="container-fluid">
+				<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Why_Did_S.I.H._Die</a>
+				
+				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
+					<ul class="navbar-nav">
+
+					</ul>
+				</div>
+				<div class="justify-content-end">
+
+					<ul class="navbar-nav">
+						
+
+						@if (ViewBag.userCount != null)
+						{
+							<li class="nav-item ">
+								<a class="nav-link login" asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
+							</li>
+						}
+						else
+						{
+							<li class="nav-item">
+								<a class="nav-link" asp-area="" asp-controller="Login" asp-action="Login">Login</a>
+							</li>
+						}
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main role="main" class="pb-3">
+		<div id="responsive-admin-menu">
+			<div id="responsive-menu">
+				<div class="menuicon">≡</div>
+			</div>
+
+			<div id="logo"></div>
+
+			<!--Menu-->
+			<div id="menu">
+
+				@if (ViewBag.userCount != null)
+				{
+					if (ViewBag.create == true)
+					{
+						<a title="Biography" class="create" asp-controller="Admin" asp-action="Thumb" asp-route-id=""><span> Create </span></a>
+
+					}
+
+				}
+			</div>
+			<!--Menu-->
+
+
+		</div>
+		@if (ViewBag.userCount != null)
+		{
+			if (ViewBag.create == true)
+			{
+				<div id="content-wrapper" style="overflow-y:scroll; background-color: #cdcbbc; box-shadow: 4px 4px 5px 4px #52535a;">
+
+					@RenderBody()
+				</div>
+
+			}
+			else
+			{
+				<div id="content-wrapper" style="overflow-y:hidden;">
+
+					@RenderBody()
+				</div>
+			}
+
+		}
+		
+
+	</main>
+
+
+	
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	<script src="/js/Chat.js"></script>
+	<script src="~/js/admın.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false);
+</body>
+</html>

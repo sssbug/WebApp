@@ -1,0 +1,107 @@
+﻿@using Why.Data.Models
+@model List<Thumb>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+    ViewBag.create = true;
+}
+
+<div class="grid-base">
+
+    <div id="grid-container">
+
+
+        @foreach (var item in Model)
+        {
+            if (item.ThumbClass == "Bronze")
+            {
+                <div class="box">
+                    <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.ThumbId">
+                        <div class="box" style="background-color:sandybrown">
+                            <h5>@item.ThumbName @item.ThumbLastName</h5>
+                            <span>@item.Date.Day:@item.Date.Month:@item.Date.Year</span>
+                            <h6>@item.ThumbTag</h6>
+                        </div>
+                    </a>
+                    <a class="btn btn-primary" asp-controller="Admin" asp-action="ThumbDel" asp-route-id="@item.ThumbId">Del</a>
+                    <a class="btn btn-primary" asp-controller="Admin" asp-action="ThumbEdit" asp-route-id="@item.ThumbId">Edit</a>
+
+                </div>
+            }
+            else if (item.ThumbClass == "Silver")
+            {
+                <div class="box">
+                    <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.ThumbId">
+                        <div class="box" style="background-color:silver">
+                            <h5>@item.ThumbName @item.ThumbLastName</h5>
+                            <span>@item.Date.Day:@item.Date.Month:@item.Date.Year</span>
+                            <h6>@item.ThumbTag</h6>
+                        </div>
+                    </a>
+                    <a class="btn btn-primary" asp-controller="Admin" asp-action="ThumbDel" asp-route-id="@item.ThumbId">Del</a>
+                    <a class="btn btn-primary" asp-controller="Admin" asp-action="ThumbEdit" asp-route-id="@item.ThumbId">Edit</a>
+
+                </div>
+            }
+            else if (item.ThumbClass == "Gold")
+            {
+                <div class="box">
+                    <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.ThumbId">
+                        <div class="box" style="background-color:goldenrod">
+                            <h5>@item.ThumbName @item.ThumbLastName</h5>
+                            <span>@item.Date.Day:@item.Date.Month:@item.Date.Year</span>
+                            <h6>@item.ThumbTag</h6>
+                        </div>
+                    </a>
+                    <a class="btn btn-primary" asp-controller="Admin" asp-action="ThumbDel" asp-route-id="@item.ThumbId">Del</a>
+                    <a class="btn btn-primary" asp-controller="Admin" asp-action="ThumbEdit" asp-route-id="@item.ThumbId">Edit</a>
+
+                </div>
+            }
+            else if (item.ThumbClass == null)
+            {
+                <div class="box">
+                    <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.ThumbId">
+                        <div class="box" style="">
+                            <h5>@item.ThumbName @item.ThumbLastName</h5>
+                            <span>@item.Date.Day:@item.Date.Month:@item.Date.Year</span>
+                            <h6>@item.ThumbTag</h6>
+                        </div>
+                    </a>
+                    <a class="btn btn-primary" asp-controller="Admin" asp-action="ThumbDel" asp-route-id="@item.ThumbId">Del</a>
+                    <a class="btn btn-primary" asp-controller="Admin" asp-action="ThumbEdit" asp-route-id="@item.ThumbId">Edit</a>
+
+                </div>
+            }
+
+
+        }
+
+
+    </div>
+
+</div>
+<script>
+    var tombCount = @Model.Count;
+    if (tombCount == 4) {
+        const collection = document.getElementById("grid-container").style["width"] = "100%";
+
+    }
+    else if (tombCount == 1) {
+        const collection = document.getElementById("grid-container").style["width"] = "40%";
+
+    }
+    else if (tombCount == 2) {
+        const collection = document.getElementById("grid-container").style["width"] = "50%";
+
+    }
+    else if (tombCount == 3) {
+        const collection = document.getElementById("grid-container").style["width"] = "80%";
+
+    }
+
+
+</script>
+
+
