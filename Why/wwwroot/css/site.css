@@ -1,0 +1,164 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #cdcbbc;
+    box-shadow: black 0px 1px 5px;
+    border: solid 1.5px #e3e1d1;
+    padding: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Genel yapı */
+html, body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(255,252,232,1) 0%, rgba(218,216,202,1) 100%);
+}
+
+.container {
+    padding-top: 10vh;
+}
+
+/* Grid */
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Box */
+.box {
+    background: #191c29;
+    height: 15rem;
+    width: 100%;
+    max-width: 20rem;
+    margin: auto;
+}
+
+/* Profil resmi */
+.profil {
+    width: 8vh;
+    height: 8vh;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Chat Bölümü */
+.massageContainer {
+    float: none;
+    margin: auto;
+    width: 100%;
+    max-width: 750px;
+    height: 584px;
+    background: #444753;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .massageContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .people-list {
+        width: 100%;
+    }
+
+    .chat {
+        width: 100%;
+    }
+}
+
+/* Chat Mesajları */
+.chat .chat-history {
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+/* Chat Giriş Alanı */
+.chat .chat-message textarea {
+    width: 100%;
+    border: none;
+    padding: 8px 15px;
+    font: 14px "Lato", Arial, sans-serif;
+    resize: none;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    border: solid;
+    background-color: white;
+}
+
+/* Butonlar */
+.login, .signup, .choseButton {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: solid;
+    box-shadow: 2px 3px 2px rgba(0,0,0,.4);
+    color: black;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+    .login:hover, .signup:hover, .choseButton:hover {
+        color: burlywood;
+        box-shadow: none;
+    }
+
+/* Arama Kutusu */
+.search {
+    margin-right: 9rem;
+}
+
+/* İkon */
+.iconn {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 576px) {
+    .search {
+        margin-right: 0;
+    }
+
+    .login, .signup {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

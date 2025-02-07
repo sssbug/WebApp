@@ -1,0 +1,74 @@
+﻿@using Why.Data.Models
+@model List<Thumb>
+@{
+	ViewData["Title"] = "Home Page";
+	var value = Model.Count;
+	List<string> category = new List<string>();
+
+}
+
+<div class="container">
+
+	<main role="main">
+
+		<div class="grid-base">
+			<div id="grid-container">
+
+				
+
+
+				@foreach (var item in Model)
+				{
+					// Burada istediğim her bölümün kendi adı olsun o ad eğer varsa oraya eklensin yoksa başka tarafa eklensin
+					@if (!category.Contains(item.ThumbTag))
+					{
+						category.Add(item.ThumbTag);
+						<h2>@item.ThumbTag</h2>
+						<div class="scroll-container">
+							<div class="box">
+								<a asp-controller="Home" asp-action="Detail" asp-route-id="@item.ThumbId">
+									<div class="box" style="">
+										<h5>@item.ThumbName @item.ThumbLastName</h5>
+										<span>@item.Date.Day:@item.Date.Month:@item.Date.Year</span>
+										<h6>@item.ThumbTag</h6>
+									</div>
+								</a>
+							</div>
+							
+						</div>
+					}
+					else
+					{
+						
+					}
+					
+				}
+			</div>
+		</div>
+
+	</main>
+</div>
+
+<script>
+	var tombCount = @Model.Count;
+	if (tombCount == 4)
+	{
+		const collection = document.getElementById("grid-container").style["width"] = "100%";
+
+	}
+	else if(tombCount == 1)
+	{
+		const collection = document.getElementById("grid-container").style["width"] = "40%";
+
+	}
+	else if (tombCount == 2)
+	{
+		const collection = document.getElementById("grid-container").style["width"] = "50%";
+
+	}
+	else if (tombCount == 3)
+	{
+		const collection = document.getElementById("grid-container").style["width"] = "80%";
+
+	}
+</script>

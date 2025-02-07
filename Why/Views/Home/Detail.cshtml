@@ -1,0 +1,103 @@
+﻿@model Why.Data.Models.Biography
+@{
+	ViewData["Title"] = "Detail";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+<div class="biografi" style="overflow-y:scroll">
+	<div class="profil">
+		<a class="login infobutton" asp-controller="Admin" asp-action="Info" asp-route-id="@ViewBag.thumbId">@ViewBag.userName</a>
+	</div>
+	<div class="container">
+		<main role="main" class="pb-3">
+			<p>@Model.BiographyContent</p>
+
+			<!-- Slideshow Container -->
+			<div class="slideshow-container">
+				@{
+					var images = Model.ImageDataList?.Split(',');
+				}
+				@if (images != null && images.Length > 0)
+				{
+					int index = 0;
+					foreach (var image in images)
+					{
+						<img class="slide" src="data:image/png;base64,@image" style="display: @(index == 0 ? "block" : "none");" />
+						index++;
+					}
+				}
+
+				<!-- Butonlar -->
+				<button class="prev" onclick="changeSlide(-1)">❮</button>
+				<button class="next" onclick="changeSlide(1)">❯</button>
+			</div>
+
+			<!-- Dots -->
+			<div class="dots">
+				@if (images != null)
+				{
+					for (int i = 0; i < images.Length; i++)
+					{
+						<span class="dot" onclick="currentSlide(@i)"></span>
+					}
+				}
+			</div>
+		</main>
+	</div>
+</div>
+
+<script>
+	var slideIndex = 0;
+	var slides = document.querySelectorAll('.slide');
+	var dots = document.querySelectorAll('.dot');
+	var autoSlideInterval = setInterval(() => changeSlide(1), 3000); // 3 saniyede bir otomatik değiştir
+
+	function changeSlide(n) {
+		slides[slideIndex].style.display = "none";
+		dots[slideIndex].classList.remove("active");
+
+		slideIndex = (slideIndex + n + slides.length) % slides.length;
+
+		slides[slideIndex].style.display = "block";
+		dots[slideIndex].classList.add("active");
+
+		restartAutoSlide();
+	}
+
+	function currentSlide(n) {
+		slides[slideIndex].style.display = "none";
+		dots[slideIndex].classList.remove("active");
+
+		slideIndex = n;
+
+		slides[slideIndex].style.display = "block";
+		dots[slideIndex].classList.add("active");
+
+		restartAutoSlide();
+	}
+
+	function restartAutoSlide() {
+		clearInterval(autoSlideInterval);
+		autoSlideInterval = setInterval(() => changeSlide(1), 3000);
+	}
+
+	// **Mouse swipe (touch drag) ile kaydırma**
+	var startX = 0;
+	var endX = 0;
+	var slideshowContainer = document.querySelector('.slideshow-container');
+
+	slideshowContainer.addEventListener("touchstart", function(event) {
+		startX = event.touches[0].clientX;
+	});
+
+	slideshowContainer.addEventListener("touchend", function(event) {
+		endX = event.changedTouches[0].clientX;
+		if (startX - endX > 50) { // Sağa kaydırma
+			changeSlide(1);
+		} else if (endX - startX > 50) { // Sola kaydırma
+			changeSlide(-1);
+		}
+	});
+</script>

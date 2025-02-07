@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Biography";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+
+<div style="border:1px #e8e8e8 solid;margin:0px 0px 10px 0px; box-shadow: 3px 4px 2px rgba(0,0,0,.6);">
+    <form method="post" enctype="multipart/form-data">
+        <div style="border-bottom:1px #e8e8e8 solid; background-color:#f3f3f3;padding:8px; font-size:13px;font-weight:700;color:#45484d;">
+            Biography
+        </div>
+        <div style="padding:8px;font-size:13px;">
+            <textarea style="width:100%;" name="BiographyContent"></textarea>
+        </div>
+        <div style="padding:8px;font-size:13px;">
+            <input type="file" name="imageFiles" multiple onchange="previewImages(event)" />
+            <div id="imagePreview"></div>
+        </div>
+        <div class="save-box">
+            <input class="save" type="submit" value="Save" name="submit">
+        </div>
+    </form>
+</div>
+<script>
+    function previewImages(event) {
+        var preview = document.getElementById('imagePreview');
+        preview.innerHTML = '';
+        var files = event.target.files;
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var img = document.createElement('img');
+                img.src = e.target.result;
+                img.style.width = '100px';
+                img.style.height = '100px';
+                img.style.margin = '5px';
+                preview.appendChild(img);
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+</script>
+
