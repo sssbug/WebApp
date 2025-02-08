@@ -65,3 +65,17 @@ C:\Users\Gökay\Documents\GitHub\WebApp\Why\Why.Data\obj\Debug\netcoreapp3.1\Why
 C:\Users\Gökay\Documents\GitHub\WebApp\Why\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.dll
 C:\Users\Gökay\Documents\GitHub\WebApp\Why\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.pdb
 C:\Users\Gökay\Documents\GitHub\WebApp\Why\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.genruntimeconfig.cache
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\bin\Debug\netcoreapp3.1\Why.Data.deps.json
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\bin\Debug\netcoreapp3.1\Why.Data.runtimeconfig.json
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\bin\Debug\netcoreapp3.1\Why.Data.runtimeconfig.dev.json
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\bin\Debug\netcoreapp3.1\Why.Data.dll
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\bin\Debug\netcoreapp3.1\Why.Data.pdb
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.csproj.AssemblyReference.cache
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.AssemblyInfoInputs.cache
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.AssemblyInfo.cs
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.csproj.CoreCompileInputs.cache
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.sourcelink.json
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.dll
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.pdb
+C:\Users\Gökay\Documents\GitHub\WebApp\Why.Data\obj\Debug\netcoreapp3.1\Why.Data.genruntimeconfig.cache

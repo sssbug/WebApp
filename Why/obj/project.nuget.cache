@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3yO2VSRsDB4=",
+  "dgSpecHash": "KsFD3RFbpXE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gökay\\Documents\\GitHub\\WebApp\\Why\\Why\\Why.csproj",
+  "projectFilePath": "C:\\Users\\Gökay\\Documents\\GitHub\\WebApp\\Why\\Why.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gökay\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512",
     "C:\\Users\\Gökay\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

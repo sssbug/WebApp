@@ -1,32 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{45DAC918-1AE2-46B5-988A-61E7B517C064}|Why.Data\\Why.Data.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\why.data\\whydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45DAC918-1AE2-46B5-988A-61E7B517C064}|Why.Data\\Why.Data.csproj|solutionrelative:why.data\\whydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\why\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\why\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\why\\repositories\\biographyrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\repositories\\biographyrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\why\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45DAC918-1AE2-46B5-988A-61E7B517C064}|Why.Data\\Why.Data.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\why.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45DAC918-1AE2-46B5-988A-61E7B517C064}|Why.Data\\Why.Data.csproj|solutionrelative:why.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,88 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Why\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Why\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAvwBoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T19:19:03.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why\\appsettings.json",
-              "RelativeDocumentMoniker": "Why\\appsettings.json",
-              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why\\appsettings.json",
-              "RelativeToolTip": "Why\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-07T19:17:42.268Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BiographyRepository .cs",
-              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why\\Repositories\\BiographyRepository .cs",
-              "RelativeDocumentMoniker": "Why\\Repositories\\BiographyRepository .cs",
-              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why\\Repositories\\BiographyRepository .cs",
-              "RelativeToolTip": "Why\\Repositories\\BiographyRepository .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T19:14:30.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WhyDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why.Data\\WhyDbContext.cs",
-              "RelativeDocumentMoniker": "Why.Data\\WhyDbContext.cs",
-              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why.Data\\WhyDbContext.cs",
-              "RelativeToolTip": "Why.Data\\WhyDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T18:41:50.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why.Data\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Why.Data\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why.Data\\Models\\Category.cs",
-              "RelativeToolTip": "Why.Data\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T18:18:10.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Why\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Why\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Why\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-03T18:14:25.172Z",
-              "EditorCaption": ""
             }
           ]
         }
