@@ -1,4 +1,4 @@
-﻿html {
+﻿/*html {
     font-size: 14px;
 }
 
@@ -12,10 +12,10 @@
     html {
         font-size: 13px;
     }
-}
+}*/
 
 /* Navbar */
-.navbar {
+/*.navbar {
     position: fixed;
     width: 100%;
     background-color: #cdcbbc;
@@ -29,49 +29,49 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
+}*/
 
 /* Genel yapı */
-html, body {
+/*html, body {
     position: relative;
     min-height: 100%;
     margin: 0;
     padding: 0;
     background: linear-gradient(0deg, rgba(255,252,232,1) 0%, rgba(218,216,202,1) 100%);
-}
+}*/
 
-.container {
+/*.container {
     padding-top: 10vh;
-}
+}*/
 
 /* Grid */
-#grid-container {
+/*#grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 10px;
-}
+}*/
 
 /* Box */
-.box {
+/*.box {
     background: #191c29;
     height: 15rem;
     width: 100%;
     max-width: 20rem;
     margin: auto;
-}
+}*/
 
 /* Profil resmi */
-.profil {
+/*.profil {
     width: 8vh;
     height: 8vh;
     position: fixed;
     right: 10px;
     bottom: 10px;
-}
+}*/
 
 /* Chat Bölümü */
-.massageContainer {
+/*.massageContainer {
     float: none;
     margin: auto;
     width: 100%;
@@ -79,9 +79,9 @@ html, body {
     height: 584px;
     background: #444753;
     border-radius: 5px;
-}
+}*/
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .massageContainer {
         width: 100%;
         height: auto;
@@ -89,41 +89,41 @@ html, body {
 
     .people-list {
         width: 100%;
-    }
+    }*/
 
-    .chat {
+    /*.chat {
         width: 100%;
-    }
-}
+    }*/
+/*}*/
 
 /* Chat Mesajları */
-.chat .chat-history {
+/*.chat .chat-history {
     padding: 15px;
     height: 300px;
     overflow-y: auto;
-}
+}*/
 
 /* Chat Giriş Alanı */
-.chat .chat-message textarea {
+/*.chat .chat-message textarea {
     width: 100%;
     border: none;
     padding: 8px 15px;
     font: 14px "Lato", Arial, sans-serif;
     resize: none;
-}
+}*/
 
 /* Footer */
-.footer {
+/*.footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 3rem;
     border: solid;
     background-color: white;
-}
+}*/
 
 /* Butonlar */
-.login, .signup, .choseButton {
+/*.login, .signup, .choseButton {
     display: inline-block;
     padding: 6px 10px;
     font-size: 14px;
@@ -138,21 +138,21 @@ html, body {
     .login:hover, .signup:hover, .choseButton:hover {
         color: burlywood;
         box-shadow: none;
-    }
+    }*/
 
 /* Arama Kutusu */
-.search {
+/*.search {
     margin-right: 9rem;
-}
+}*/
 
 /* İkon */
-.iconn {
+/*.iconn {
     width: 30px;
     height: 30px;
-}
+}*/
 
 /* Responsive Media Queries */
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
     .search {
         margin-right: 0;
     }
@@ -160,5 +160,257 @@ html, body {
     .login, .signup {
         font-size: 12px;
         padding: 4px 8px;
+    }
+}
+ 
+
+
+
+
+
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+       
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .main-content {
+            flex: 3;
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .sidebar h2, .main-content h2 {
+            color: #333;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        .sidebar ul li:hover {
+            background-color: #f4f4f4;
+        }
+        .game-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .game-item {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 10px;
+            background: #eee;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .game-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }*/
+        /*footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }*/
+
+        /* Responsive Tasarım */
+        /*@media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .sidebar, .main-content {
+                flex: 1 1 100%;
+            }
+            .game-item {
+                flex: 1 1 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .game-item {
+                flex: 1 1 100%;
+            }
+        }*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+    header h1 {
+        margin: 0;
+    }
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+    .header-buttons button {
+        background: #77aaff;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .header-buttons button:hover {
+            background: #5599ff;
+        }
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex: 3;
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+    .sidebar h2, .main-content h2 {
+        color: #333;
+    }
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+    .sidebar ul li {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+        .sidebar ul li:hover {
+            background-color: #f4f4f4;
+        }
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.game-item {
+    flex: 0 0 calc(33.333% - 20px); /* Sabit genişlik */
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    height:10rem;
+}
+
+    .game-item img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        flex: 1 1 100%;
+    }
+
+    .game-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .header-buttons {
+        display: none; /* Mobilde butonları gizle */
+    }
+
+    .toggle-content {
+        display: block; /* Mobilde toggle butonunu göster */
+        background: #77aaff;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .sidebar.collapsed {
+        display: none; /* Sadece sidebar'ı gizle */
+    }
+}
+
+@media (min-width: 769px) {
+    .toggle-content {
+        display: none; /* Büyük ekranlarda toggle butonunu gizle */
+    }
+}
+
+@media (max-width: 480px) {
+    .game-item {
+        flex: 1 1 100%;
     }
 }

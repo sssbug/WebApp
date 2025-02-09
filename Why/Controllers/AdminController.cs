@@ -22,7 +22,7 @@ namespace Why.Controllers
         BiographyManager bm = new BiographyManager(new BiographyRepository());
         UserManager um = new UserManager(new UserRepository());
         Thumb thumbsId = new Thumb();
-
+        CategoryManager cm = new CategoryManager(new CategoryRepository());
 
 
 
@@ -69,20 +69,9 @@ namespace Why.Controllers
             var userClaim = User.Identity.Name;
             ViewBag.userCount = userClaim;
 
-            if (name == "Bronze")
-            {
-                ViewBag.thumbClassName = name;
-            }
-            else if (name == "Silver")
-            {
-                ViewBag.thumbClassName = name;
-            }
-            else if (name == "Gold")
-            {
-                ViewBag.thumbClassName = name;
-            }
+            
 
-            return View();
+            return View(cm.GetList());
         }
 
 
@@ -99,6 +88,7 @@ namespace Why.Controllers
             await Task.CompletedTask;
             return RedirectToAction("Biography", "Admin");
         }
+
         [HttpGet]
         public IActionResult Thumbdel(int id)
         {

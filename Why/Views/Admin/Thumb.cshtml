@@ -1,14 +1,14 @@
-﻿@{
+﻿@using Why.Data.Models
+@model List<Category>
+@{
 	ViewData["Title"] = "Thumb";
 	Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
 
-
-
 <main role="main" class="pb-3">
 	<div class="login-box">
-		<h2>Tomb</h2>
+		<h2>Game</h2>
 		<form method="post">
 			<input type="hidden" name="ThumbClass" value="@ViewBag.thumbClassName" required="">
 			<div class="user-box">
@@ -24,61 +24,21 @@
 
 			</div>
 			<div>
-				<h4 class="title">Reason</h4>
+				<h4 class="title">Type</h4>
 
 
 				<div class="chosen">
+					
+					@foreach (var item in Model)
+					{
+						<label>
+							<input type="radio" name="ThumbTag" value="@item.CategoryName" required="">
+							<span>@item.CategoryName</span>
+						</label>
+					}
 
-					@*<div>
-					<label>Suicide</label>
-					<input type="radio" name="ThumbTag" value="Suicide" required="">
-					</div>
-					<div>
-					<label>Natural Deaths</label>
-					<input type="radio" name="ThumbTag" value="Natural" required="">
-					</div>
-					<div>
-					<label>Accidental Deaths</label>
-					<input type="radio" name="ThumbTag" value="Accidental" required="">
-					</div>
-					<div>
-					<label>Homicide</label>
-					<input type="radio" name="ThumbTag" value="Homicide" required="">
-					</div>
-					<div>
-					<label>Undetermined</label>
-					<input type="radio" name="ThumbTag" value="Undetermined" required="">
-					</div>
-					<div>
-					<label>Pending</label>
-					<input type="radio" name="ThumbTag" value="Pending" required="">
-					</div>
-					*@
-
-					<label>
-						<input type="radio" name="ThumbTag" value="Suicide" required="">
-						<span>Suicide</span>
-					</label>
-					<label>
-						<input type="radio" name="ThumbTag" value="Natural" required="">
-						<span>Natural</span>
-					</label>
-					<label>
-						<input type="radio" name="ThumbTag" value="Accidental" required="">
-						<span>Accidenta</span>
-					</label>
-					<label>
-						<input type="radio" name="ThumbTag" value="Homicide" required="">
-						<span>Homicide</span>
-					</label>
-					<label>
-						<input type="radio" name="ThumbTag" value="Undetermined" required="">
-						<span>Undetermined</span>
-					</label>
-					<label>
-						<input type="radio" name="ThumbTag" value="Pending" required="">
-						<span>Pending</span>
-					</label>
+					
+					
 					
 
 				</div>

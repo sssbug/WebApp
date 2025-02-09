@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Why </title>
+    <title>OPTR</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Why_Did_S.I.H._Die.styles.css" asp-append-version="true" />
@@ -15,7 +15,7 @@
      
 </head>
 <body>
-    <header class="navable">
+@*     <header class="navable">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Why_Did_S.I.H._Die</a>
@@ -78,9 +78,9 @@
             </div>
         </nav>
     </header>
-
-    @RenderBody()
-
+    <main role="main">
+    
+    </main>
 
 
     <footer class="footer text-muted">
@@ -88,12 +88,58 @@
         <div class="privacy">
             &copy; 2022 - Why_Did_S.I.H._Die - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer> *@
 
+
+
+
+
+    <header>
+        <h1>OPTR</h1>
+        <div class="header-buttons">
+            <ul class="">
+
+                @if (ViewBag.userCount != null)
+                {
+
+                    <li class="nav-item">
+                        <a class="login" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="login" asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
+                    </li>
+
+                }
+                else
+                {
+
+                    <li class="nav-item ">
+                        <a class="login" asp-area="" asp-controller="Login" asp-action="Login">Sign in</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="signup" asp-controller="Account" asp-action="Register">Sign Up</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <button class="toggle-content" onclick="toggleSidebar()">Sidebar'ı Göster/Gizle</button>
+        <div class="content" id="content">
+            @RenderBody()
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Oyun Platformu. Tüm hakları saklıdır.</p>
+    </footer>
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     
-    @await RenderSectionAsync("Scripts", required: false);
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -7,14 +7,14 @@
 
 }
 
-<div class="container">
+@* <div class="container">
 
-	<main role="main">
+	@* <main role="main">
 
 		<div class="grid-base">
 			<div id="grid-container">
 
-				
+
 
 
 				@foreach (var item in Model)
@@ -34,22 +34,107 @@
 									</div>
 								</a>
 							</div>
-							
+
 						</div>
 					}
 					else
 					{
-						
+
 					}
-					
+
 				}
 			</div>
 		</div>
 
-	</main>
+	</main> *@
+@* </div>  *@
+
+@* <div class="grid-base">
+		<div id="grid-container">
+			@foreach (var item in Model)
+			{
+
+				<div class="scroll-container">
+					<div class="item">
+						<a asp-controller="Home" asp-action="Detail" asp-route-id="@item.ThumbId">
+							<div class="box" style="">
+								<h5>@item.ThumbName @item.ThumbLastName</h5>
+								<span>@item.Date.Day:@item.Date.Month:@item.Date.Year</span>
+								<h6>@item.ThumbTag</h6>
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+
+			}
+		</div>
+	</div> *@
+<div class="sidebar" id="sidebar">
+	<a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name=""><h2>POPULAR TAGS</h2></a>
+	<ul>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Browser games</a></li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Homicide">Multiplayer</a> </li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Visual novels</a> </li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Simulation</a> </li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">macOS games</a> </li>
+	</ul>
+
+	<h2>BROWSE</h2>
+	<ul>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Games</a></li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Game assets</a></li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Tools</a></li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Albums & Soundtracks</a></li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Physical games</a></li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Comics</a></li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Books</a></li>
+		
+	</ul>
+
+	<h2>GAMES BY PRICE</h2>
+	<ul>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">On Sale</a></li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Free games</a></li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">With demo</a></li>
+		<li class="nav-item-chose"><a class=" choseButton" asp-area="" asp-controller="Home" asp-action="Index" asp-route-name="Suicide">Top sellers</a></li>
+	</ul>
 </div>
 
+<div class="main-content">
+	<h2>Latest Featured Games</h2>
+	<div class="game-list">
+
+		@foreach (var item in Model)
+		{
+
+
+			<div class="game-item">
+				<a asp-controller="Home" asp-action="Detail" asp-route-id="@item.ThumbId">
+					<div>
+						<h5>@item.ThumbName @item.ThumbLastName</h5>
+						<span>@item.Date.Day:@item.Date.Month:@item.Date.Year</span>
+						<h6>@item.ThumbTag</h6>
+					</div>
+				</a>
+			</div>
+
+
+
+		}
+	</div>
+	
+</div>
+
+
 <script>
+	function toggleSidebar() {
+		const sidebar = document.getElementById('sidebar');
+		sidebar.classList.toggle('collapsed');
+	}
+</script>
+@* <script>
 	var tombCount = @Model.Count;
 	if (tombCount == 4)
 	{
@@ -71,4 +156,4 @@
 		const collection = document.getElementById("grid-container").style["width"] = "80%";
 
 	}
-</script>
+</script> *@
