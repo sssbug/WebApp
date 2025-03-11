@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\views\\admin\\thumb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\views\\shared\\_create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\views\\shared\\_create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45DAC918-1AE2-46B5-988A-61E7B517C064}|Why.Data\\Why.Data.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45DAC918-1AE2-46B5-988A-61E7B517C064}|Why.Data\\Why.Data.csproj|solutionrelative:why.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +19,12 @@
       "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\modelsservices\\categorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\modelsservices\\categorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\wwwroot\\css\\create.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|solutionrelative:why\\wwwroot\\css\\create.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B7A933AE-89DB-4BED-A1AF-F7D43385668C}|Why\\Why.csproj|c:\\users\\g\u00F6kay\\documents\\github\\webapp\\why\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,28 +46,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Why\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Why\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwEkAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CategoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\ModelsServices\\CategoryManager.cs",
+              "RelativeDocumentMoniker": "Why\\ModelsServices\\CategoryManager.cs",
+              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\ModelsServices\\CategoryManager.cs",
+              "RelativeToolTip": "Why\\ModelsServices\\CategoryManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T09:51:21.187Z",
+              "WhenOpened": "2025-02-09T14:56:48.564Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why.Data\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Why.Data\\Models\\Category.cs",
               "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why.Data\\Models\\Category.cs",
               "RelativeToolTip": "Why.Data\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T20:51:10.231Z",
+              "WhenOpened": "2025-02-09T14:51:15.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Why\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Why\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAiwIwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-09T13:45:22.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.css",
+              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\wwwroot\\css\\Create.css",
+              "RelativeDocumentMoniker": "Why\\wwwroot\\css\\Create.css",
+              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\wwwroot\\css\\Create.css",
+              "RelativeToolTip": "Why\\wwwroot\\css\\Create.css",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAKIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-09T12:20:17.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Views\\Shared\\_Create.cshtml",
+              "RelativeDocumentMoniker": "Why\\Views\\Shared\\_Create.cshtml",
+              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Views\\Shared\\_Create.cshtml",
+              "RelativeToolTip": "Why\\Views\\Shared\\_Create.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T12:07:04.035Z",
               "EditorCaption": ""
             },
             {
@@ -74,48 +117,23 @@
               "RelativeDocumentMoniker": "Why\\Views\\Admin\\Thumb.cshtml",
               "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Views\\Admin\\Thumb.cshtml",
               "RelativeToolTip": "Why\\Views\\Admin\\Thumb.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAmwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-08T20:44:38.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Why\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Why\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAHEAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T10:29:29.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Why\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Why\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T08:47:01.934Z",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Why\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Why\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAgwEIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T09:51:21.187Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "Why\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\G\u00F6kay\\Documents\\GitHub\\WebApp\\Why\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "Why\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAEUBAAAAAAAAAAAqwGIBAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-08T08:43:40.134Z"
             }
           ]
         }

@@ -2,7 +2,7 @@
 @model List<Category>
 @{
 	ViewData["Title"] = "Thumb";
-	Layout = "~/Views/Shared/_Admin.cshtml";
+	Layout = "~/Views/Shared/_Create.cshtml";
 }
 
 
@@ -31,10 +31,11 @@
 					
 					@foreach (var item in Model)
 					{
-						<label>
-							<input type="radio" name="ThumbTag" value="@item.CategoryName" required="">
+						
+						<div class="checkbox-item">
+							<input type="checkbox" name="ThumbTag" value="@item.CategoryName">
 							<span>@item.CategoryName</span>
-						</label>
+						</div>
 					}
 
 					
@@ -43,15 +44,19 @@
 
 				</div>
 			</div>
-			<div class="user-box">
-				<h4 class="title">Day of Death</h4>
-				<input type="date" name="Date" required="">
+			
+			<div class="form-group">
+				<label for="death-date">Day of Death</label>
+				<input type="date" id="death-date" name="death-date">
+			</div>
 
 
-			</div>
-			<div>
-				<input class="next" type="submit" value="Next" name="submit">
-			</div>
+			
+
+
+
+			<!-- Next butonu -->
+			<button class="next-button" type="submit" value="Next" name="submit">Next</button>
 		</form>
 	</div>
 </main>

@@ -988,3 +988,4 @@ C:\Users\Gökay\Documents\GitHub\WebApp\Why\obj\Debug\netcoreapp3.1\Why.csproj.U
 C:\Users\Gökay\Documents\GitHub\WebApp\Why\obj\Debug\netcoreapp3.1\Why.dll
 C:\Users\Gökay\Documents\GitHub\WebApp\Why\obj\Debug\netcoreapp3.1\Why.pdb
 C:\Users\Gökay\Documents\GitHub\WebApp\Why\obj\Debug\netcoreapp3.1\Why.genruntimeconfig.cache
+C:\Users\Gökay\Documents\GitHub\WebApp\Why\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Create.cshtml.g.cs
